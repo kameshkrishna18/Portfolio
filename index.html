@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for a classic aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <!-- Grainy Vintage Overlay -->
+    <div class="noise-overlay"></div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Kamesh Krishna L</h1>
+            <h2>Computer Science Engineering Student & Aspiring Full-Stack Developer</h2>
+            <div class="btn-group">
+                <a href="#projects" class="btn primary">View My Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p><strong>Hi, I'm Kamesh Krishna L.</strong> I am a dedicated Computer Science student passionate about building practical software and understanding the deep mathematical logic behind it.</p>
+            
+            <div class="about-grid">
+                <div>
+                    <h3>Education & Focus</h3>
+                    <p>I focus on robust software development and hardware architecture, with practical experience in C programming, data structures, and digital logic analysis.</p>
+                </div>
+                <div>
+                    <h3>Interests</h3>
+                    <p>Outside of coding, I spend time watching One Piece, and I have a deep appreciation for 90s vintage aesthetics and golden hour photography.</p>
+                </div>
+                <div>
+                    <h3>Career Goals</h3>
+                    <p>To become a full-stack developer who creates seamless, aesthetically pleasing, and highly functional web applications.</p>
+                </div>
+                <div>
+                    <h3>Continuous Learning</h3>
+                    <p>Currently mastering JavaScript, exploring database management with Supabase, and studying Spanish grammar (leyendo los libros de español).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills 🛠️</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>C & C++ (Sorting, Arrays, Stacks)</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Computer Science</h3>
+                    <ul>
+                        <li>Data Structures (AVL Trees)</li>
+                        <li>Digital Logic (LTspice, ALU, Bus Org)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Supabase (BaaS)</li>
+                        <li>Vercel (Deployment)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects 🚀</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Campus Vision — Lost & Found</h3>
+                    <p>A campus Lost & Found platform that allows students to report and search for lost items efficiently. Built to solve a real campus issue by centralizing lost item reports.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS,Python, Oracle</p>
+                    <div class="project-links" style="margin-top: 1rem;">
+                        <a href="#" target="_blank">GitHub</a> | <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Education & 6. Achievements -->
+    <section id="education-achievements" class="container split-section">
+        <div class="education">
+            <h2>Education 🎓</h2>
+            <div class="timeline-item">
+                <h3>Master of Technology in Computer Science</h3>
+                <p><strong>Vellore Institute Of Technology</strong></p>
+                <p>2026 – Present</p>
+            </div>
+        </div>
+        <div class="achievements">
+            <h2>Achievements & Coursework 🏆</h2>
+            <ul>
+                <li>Analyzed digital logic circuits, resolving simulation errors in LTspice for JK Flip-Flops.</li>
+                <li>Completed advanced studies in Bus Organization, Status Register design, and ALU design.</li>
+                <li>Applied Lagrange’s method and Cauchy-Euler equations to solve partial differential equations.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 8. Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact 📬</h2>
+            <p>Want to collaborate? Send me a message!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Kamesh Krishna L" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <p id="form-status" style="display:none; margin-top: 10px;"></p>
+        </div>
+    </section>
+
+    <!-- 9. Social Links & Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/kameshkrishna18" target="_blank">GitHub</a>
+                <a href="http://www.linkedin.com/in/kameshkrishna" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/kamesh__krishna/" target="_blank">Instagram</a>
+                <a href="mailto:kamesh0218@gmail.com">Email</a>
+            </div>
+            <p>&copy; 2026 Kamesh. Built with HTML, CSS, JS & Supabase.</p>
+        </div>
+    </footer>
+
+    <!-- This is the crucial line that was missing! -->
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>
